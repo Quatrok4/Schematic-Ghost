@@ -17,6 +17,7 @@ public final class SchematicManager {
     private static LitematicSchematic current;
     private static String currentFile;
     private static int originX, originY, originZ;
+    private static boolean originSet;
 
     private SchematicManager() {}
 
@@ -57,7 +58,8 @@ public final class SchematicManager {
     public static LitematicSchematic get() { return current; }
     public static String fileName() { return currentFile; }
 
-    public static void setOrigin(int x, int y, int z) { originX = x; originY = y; originZ = z; }
+    public static void setOrigin(int x, int y, int z) { originX = x; originY = y; originZ = z; originSet = true; }
+    public static boolean hasOrigin() { return originSet; }
     public static int originX() { return originX; }
     public static int originY() { return originY; }
     public static int originZ() { return originZ; }
