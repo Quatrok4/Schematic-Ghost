@@ -18,7 +18,7 @@ public final class GhostKeys {
 
         openPanel = KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 "key.schematic-ghost.open_panel",
-                InputConstants.Type.KEYSYM,
+                InputConstants.Type.KEYBOARD,
                 InputConstants.KEY_G,
                 category));
 
